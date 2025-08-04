@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Events Hub</title>
+</head>
+<body>
+
+    <header>
+        <h1>Local Events Hub</h1>
+        <nav>
+            <a href="#categories">Categories</a><br>
+            <a href="#events">Events</a><br>
+            <a href="#media">Watch</a><br>
+            <a href="#submit">Submit Event</a><br> 
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Event Categories (List) -->
+        <section id="catagories">
+            <h2>Event Categories</h2>
+            <ul>
+                <li><strong>Music</strong>:</li>
+                  <ol>
+                    <li>Live concerts and</li>
+                    <li>open mic nights</li>
+                  </ol>
+                <li><strong>Art</strong>:</li>
+                  <ol type="i">
+                    <li>Gallery exhibitions and</li>
+                    <li>workshops</li>
+                  </ol>
+                <li><strong>Food</strong>:</li>
+                  <ol type="I">
+                    <li>Farmers' markets and</li>
+                    <li>food festivals</li>
+                  </ol>
+                <li><strong>Community</strong>:</li>
+                  <ol type="a">
+                    <li>Charity runs and</li>
+                    <li>local meetups</li>
+                  </ol>
+            </ul>
+          </section>
+
+        <!-- Section 2: Upcoming Events (Table) -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <table border="1">
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Ticket Price</th>
+                </tr>
+                <tr>
+                    <td>Summer Jazz Night</td>
+                    <td>Aug 10, 2017</td>
+                    <td>7:00 PM</td>
+                    <td>Unity Park</td>
+                    <td>birr 1500</td>
+                </tr>
+                <tr>
+                    <td>Art Workshop</td>
+                    <td>Aug 15, 2017</td>
+                    <td>2:00 PM</td>
+                    <td>Community Center</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Food Festival</td>
+                    <td>Aug 20, 2017</td>
+                    <td>12:00 PM</td>
+                    <td>Assembly Hall</td>
+                    <td>birr 1000</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section 3: Embedded Media -->
+        <section id="media">
+
+            <h2>Watch Our Community in Action</h2>
+            <img src="https://images.pexels.com/photos/3646849/pexels-photo-3646849.jpeg" alt="Sunlit Promenade by the Sea" width="700">
+            <img src="https://images.pexels.com/photos/13838158/pexels-photo-13838158.jpeg" alt="photo for festival night view" width="590">
+            <video width="560" height="315" src="https://assets.mixkit.co/videos/4688/4688-720.mp4" type="mp4/video" title="Community Highlights" allowfullscreen controls>your device do not support the video</video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jLRXicRdNCQ" title="Stretch Leadership and Management Conference is back! - Promo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <audio src="https://audionautix.com/Music//FallingSky.mp3" type="audio/mpeg" controls></audio>
+
+        </section>
+
+                <!-- Section 3: Event Submission (Form) -->
+        <fieldset id="submit">
+
+            <h2>Submit an Event Idea</h2>
+            <form">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" >
+
+                <label for="name">Password: </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="on" required>
+
+                <label for="phone_number">Phone number:</label>
+                <input type="text" id="phone_number" name="phone_number" pattern="+[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}  " placeholder="+251-123-456-789"><br><br>
+
+                <label for="id_number">Id Number:</label><br>
+                <input type="text" id="id_number" name="id_number" value="PLP/5643/25" readonly><br><br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="eventTitle" name="age" placeholder="Enter your age" min="13" max="60"><br><br>
+
+                <label for="sex">Gender</label>
+                <input type="radio" name="sex" id="male">Male
+                <input type="radio" name="sex" id="female">Female <br><br>
+
+                <label for="description">Event Description: </label>
+                <textarea id="description" name="description" rows="3" placeholder="Enter description about your idea" required></textarea><br><br>
+
+                <label for="date">Proposed Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="checkbox"></label>
+                <input type="checkbox"> Agree Terms & Condition <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+          </fieldset>
+      </main>
+      <hr>
+    <footer>
+      <p>Contact us: events@communityhub.com | Follow us on social media</p>
+    </footer>
+        
+</body>
+</html>
